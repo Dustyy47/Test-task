@@ -3,7 +3,6 @@ import { InputHTMLAttributes, ReactNode, useMemo, useState } from "react";
 enum ParamInputType {
   string,
 }
-
 type ParamInputValue = string;
 
 interface Color {
@@ -132,7 +131,5 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 export function Input({ ...inputProps }: InputProps) {
   return <input {...inputProps} />;
 }
-
-export function ParamTextInput() {}
 
 export default App;
